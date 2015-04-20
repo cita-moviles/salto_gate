@@ -7,15 +7,38 @@
 //
 
 import UIKit
-
 class auth_sucess: UIViewController {
-
+    
+    var door = String()
+    var sender = String()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Can you see it now? Welcome to Swift!")
+        println("Authentication ViewController loaded")
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func Puerta_clicked(sender: AnyObject) {
+        
+        println("Puerta button pressed")
+        self.door = "Puerta 1"
+        
+    }
+    
+    @IBAction func Torniquete_clicked(sender: AnyObject) {
+        
+        println("Torniquete button pressed")
+        self.door = "Acceso 1"
+
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var destViewController : lock_status = segue.destinationViewController as lock_status
+        destViewController.door = self.door
+        destViewController.sender = "Raime Bustos"
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

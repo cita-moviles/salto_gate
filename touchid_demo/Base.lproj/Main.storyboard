@@ -103,6 +103,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Puerta_clicked:" destination="Ofp-A0-Sgs" eventType="touchUpInside" id="0zU-tX-ei4"/>
                                     <segue destination="pXj-hI-qCh" kind="show" id="z8v-2G-IA8"/>
                                 </connections>
                             </button>
@@ -112,6 +113,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Torniquete_clicked:" destination="Ofp-A0-Sgs" eventType="touchUpInside" id="7hs-jV-YhE"/>
                                     <segue destination="pXj-hI-qCh" kind="show" id="Tsn-vU-NmH"/>
                                 </connections>
                             </button>
@@ -123,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="1004" y="-147"/>
         </scene>
-        <!--View Controller-->
+        <!--Lock status-->
         <scene sceneID="wRU-AY-3v8">
             <objects>
-                <viewController id="pXj-hI-qCh" sceneMemberID="viewController">
+                <viewController id="pXj-hI-qCh" customClass="lock_status" customModule="touchid_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ASb-C6-6Lc"/>
                         <viewControllerLayoutGuide type="bottom" id="1bJ-on-ev2"/>
@@ -166,6 +168,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="status_label" destination="swh-gK-A7B" id="Phd-lK-crc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHc-aE-OMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
