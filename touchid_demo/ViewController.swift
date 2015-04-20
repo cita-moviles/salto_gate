@@ -12,7 +12,11 @@ import LocalAuthentication
 class ViewController: UIViewController {
     @IBOutlet weak var lblAuthResult: UILabel!
 
-
+    
+   override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

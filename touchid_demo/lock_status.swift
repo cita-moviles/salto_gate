@@ -11,6 +11,7 @@ import UIKit
 class lock_status: UIViewController {
     
     @IBOutlet weak var status_label: UILabel!
+    @IBOutlet weak var status_lbl: UILabel!
     var door = String()
     var sender = String()
     var state = "open"
@@ -19,6 +20,7 @@ class lock_status: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         status_label.text = self.sender + " sucessfully opened " + self.door
+        status_lbl.text = self.state
         // Do any additional setup after loading the view.
     }
    

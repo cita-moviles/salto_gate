@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		84119D921ADC845E0076F368 /* auth_sucess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119D911ADC845E0076F368 /* auth_sucess.swift */; };
+		84ACFA0B1AE5B22F00DBF420 /* open salto with touch ID-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACFA081AE5B22F00DBF420 /* open salto with touch ID-01.png */; };
+		84ACFA0C1AE5B22F00DBF420 /* open salto with touch ID-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACFA091AE5B22F00DBF420 /* open salto with touch ID-02.png */; };
+		84ACFA0D1AE5B22F00DBF420 /* open salto with touch ID-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACFA0A1AE5B22F00DBF420 /* open salto with touch ID-03.png */; };
 		84C7EE161AE01F2500E82C7C /* lock_status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7EE151AE01F2500E82C7C /* lock_status.swift */; };
 		84D1FC9A1AD704E6008FC9D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1FC991AD704E6008FC9D2 /* AppDelegate.swift */; };
 		84D1FC9C1AD704E6008FC9D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1FC9B1AD704E6008FC9D2 /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		84119D911ADC845E0076F368 /* auth_sucess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_sucess.swift; sourceTree = "<group>"; };
+		84ACFA081AE5B22F00DBF420 /* open salto with touch ID-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-01.png"; sourceTree = "<group>"; };
+		84ACFA091AE5B22F00DBF420 /* open salto with touch ID-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-02.png"; sourceTree = "<group>"; };
+		84ACFA0A1AE5B22F00DBF420 /* open salto with touch ID-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-03.png"; sourceTree = "<group>"; };
 		84C7EE151AE01F2500E82C7C /* lock_status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lock_status.swift; sourceTree = "<group>"; };
 		84D1FC941AD704E6008FC9D2 /* touchid_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchid_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1FC981AD704E6008FC9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +66,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84ACF9FF1AE5873300DBF420 /* salto gate images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "salto gate images";
+			sourceTree = "<group>";
+		};
 		84D1FC8B1AD704E6008FC9D2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,10 @@
 		84D1FC961AD704E6008FC9D2 /* touchid_demo */ = {
 			isa = PBXGroup;
 			children = (
+				84ACFA081AE5B22F00DBF420 /* open salto with touch ID-01.png */,
+				84ACFA091AE5B22F00DBF420 /* open salto with touch ID-02.png */,
+				84ACFA0A1AE5B22F00DBF420 /* open salto with touch ID-03.png */,
+				84ACF9FF1AE5873300DBF420 /* salto gate images */,
 				84D1FC991AD704E6008FC9D2 /* AppDelegate.swift */,
 				84D1FC9B1AD704E6008FC9D2 /* ViewController.swift */,
 				84D1FC9D1AD704E6008FC9D2 /* Main.storyboard */,
@@ -199,8 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D1FC9F1AD704E6008FC9D2 /* Main.storyboard in Resources */,
+				84ACFA0B1AE5B22F00DBF420 /* open salto with touch ID-01.png in Resources */,
 				84D1FCA41AD704E6008FC9D2 /* LaunchScreen.xib in Resources */,
+				84ACFA0D1AE5B22F00DBF420 /* open salto with touch ID-03.png in Resources */,
 				84D1FCA11AD704E6008FC9D2 /* Images.xcassets in Resources */,
+				84ACFA0C1AE5B22F00DBF420 /* open salto with touch ID-02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
