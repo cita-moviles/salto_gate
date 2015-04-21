@@ -17,12 +17,13 @@ class lock_status: UIViewController {
     var door = String()
     var sender = String()
     var state = "open"
-    var socket = GCDAsyncSocket.alloc()
+    var socket = GCDAsyncSocket()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         status_label.text = self.sender + " sucessfully opened " + self.door
         status_lbl.text = self.state
+        self.OpenGate()
         
         
         // Do any additional setup after loading the view.
