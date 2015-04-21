@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class lock_status: UIViewController {
     
     @IBOutlet weak var status_label: UILabel!
@@ -15,16 +17,46 @@ class lock_status: UIViewController {
     var door = String()
     var sender = String()
     var state = "open"
-    
+    var socket = GCDAsyncSocket.alloc()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         status_label.text = self.sender + " sucessfully opened " + self.door
         status_lbl.text = self.state
+        
+        
         // Do any additional setup after loading the view.
     }
    
-   
+    func OpenGate () {
+        socket.setDelegate(self)
+        socket.setDelegateQueue(dispatch_get_main_queue())
+        self.initNetworkCommunication()
+        
+    }
+    
+    func initNetworkCommunication () {
+        if (!socket.connectToHost("10.33.16.140", onPort: 8050, error: nil)) {
+            println("error in comunication")
+            return
+        } else {
+            self.sendMessage()
+        }
+    
+    }
+    
+    func sendMessage () {
+        var xml: String = "STP/00/194/<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><RequestCall><RequestName>OnlineDoor.Open</RequestName><Params><DoorNameList><DoorID>Lector Mural</DoorID></DoorNameList></Params></RequestCall>"
+        var data : NSData = xml.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: true)!
+        socket.writeData(data, withTimeout: -1, tag: 10)
+        socket.writeData(data, withTimeout: -1, tag: 10)
+        var data_from_server = socket.readDataWithTimeout(-1, tag: 10)
+        println(data_from_server)
+        
+    }
+    
+    
+    
 
 
     /*

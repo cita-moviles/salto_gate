@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		536C1EB8868007B464C261EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6E84433C10885280CCA37A /* libPods.a */; };
 		84119D921ADC845E0076F368 /* auth_sucess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84119D911ADC845E0076F368 /* auth_sucess.swift */; };
 		84ACFA0B1AE5B22F00DBF420 /* open salto with touch ID-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACFA081AE5B22F00DBF420 /* open salto with touch ID-01.png */; };
 		84ACFA0C1AE5B22F00DBF420 /* open salto with touch ID-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ACFA091AE5B22F00DBF420 /* open salto with touch ID-02.png */; };
@@ -35,6 +36,7 @@
 		84ACFA081AE5B22F00DBF420 /* open salto with touch ID-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-01.png"; sourceTree = "<group>"; };
 		84ACFA091AE5B22F00DBF420 /* open salto with touch ID-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-02.png"; sourceTree = "<group>"; };
 		84ACFA0A1AE5B22F00DBF420 /* open salto with touch ID-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open salto with touch ID-03.png"; sourceTree = "<group>"; };
+		84ACFA0E1AE5D28200DBF420 /* swift_bridge_objectivec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swift_bridge_objectivec.h; sourceTree = "<group>"; };
 		84C7EE151AE01F2500E82C7C /* lock_status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lock_status.swift; sourceTree = "<group>"; };
 		84D1FC941AD704E6008FC9D2 /* touchid_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchid_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1FC981AD704E6008FC9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +48,9 @@
 		84D1FCA91AD704E6008FC9D2 /* touchid_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = touchid_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1FCAE1AD704E7008FC9D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D1FCAF1AD704E7008FC9D2 /* touchid_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchid_demoTests.swift; sourceTree = "<group>"; };
+		AD7A477CD151674A319A18EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D99628660D358620B3268527 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EE6E84433C10885280CCA37A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536C1EB8868007B464C261EA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A9DC75766A7913EB64FD29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE6E84433C10885280CCA37A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84ACF9FF1AE5873300DBF420 /* salto gate images */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,8 @@
 				84D1FC961AD704E6008FC9D2 /* touchid_demo */,
 				84D1FCAC1AD704E7008FC9D2 /* touchid_demoTests */,
 				84D1FC951AD704E6008FC9D2 /* Products */,
+				FE5F33843FA919E4C576A0D9 /* Pods */,
+				38A9DC75766A7913EB64FD29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +122,7 @@
 				84D1FC971AD704E6008FC9D2 /* Supporting Files */,
 				84119D911ADC845E0076F368 /* auth_sucess.swift */,
 				84C7EE151AE01F2500E82C7C /* lock_status.swift */,
+				84ACFA0E1AE5D28200DBF420 /* swift_bridge_objectivec.h */,
 			);
 			path = touchid_demo;
 			sourceTree = "<group>";
@@ -135,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE5F33843FA919E4C576A0D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD7A477CD151674A319A18EC /* Pods.debug.xcconfig */,
+				D99628660D358620B3268527 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D1FCB31AD704E7008FC9D2 /* Build configuration list for PBXNativeTarget "touchid_demo" */;
 			buildPhases = (
+				91E37FDAF349A3F02F7FF39E /* Check Pods Manifest.lock */,
 				84D1FC901AD704E6008FC9D2 /* Sources */,
 				84D1FC911AD704E6008FC9D2 /* Frameworks */,
 				84D1FC921AD704E6008FC9D2 /* Resources */,
+				5180D7D9FBBC05C664CAFB1D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5180D7D9FBBC05C664CAFB1D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E37FDAF349A3F02F7FF39E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D1FC901AD704E6008FC9D2 /* Sources */ = {
@@ -362,24 +423,28 @@
 		};
 		84D1FCB41AD704E7008FC9D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD7A477CD151674A319A18EC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = touchid_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = touchid_demo/swift_bridge_objectivec.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		84D1FCB51AD704E7008FC9D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99628660D358620B3268527 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = touchid_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = touchid_demo/swift_bridge_objectivec.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
