@@ -37,11 +37,11 @@ class lock_status: UIViewController {
     }
     
     func initNetworkCommunication () {
-        if (!socket.connectToHost("10.33.16.140", onPort: 8050, error: nil)) {
+        if (!socket.connectToHost("10.33.9.196", onPort: 8050, error: nil)) {
             println("error in comunication")
             return
         } else {
-            self.sendMessage()
+        //self.sendMessage()
         }
     
     }
@@ -53,8 +53,13 @@ class lock_status: UIViewController {
         socket.writeData(data, withTimeout: -1, tag: 10)
         var data_from_server = socket.readDataWithTimeout(-1, tag: 10)
         println(data_from_server)
-        
     }
+    
+   func socket(socket : GCDAsyncSocket, didConnectToHost host:String, port p:UInt16) {
+        self.sendMessage()
+        println ("did conected to host")
+    }
+
     
     
     
